@@ -22,7 +22,7 @@ Cada diretório de projeto contém:
 
 ## Projetos
 
-### [loops-branches-colecoes: XYZ](loops-branches-colecoes_XYZ/README.md)
+### [loops-branches-colecoes: XYZ](loops-branches-colecoes/README.md)
 Description.
 
 
