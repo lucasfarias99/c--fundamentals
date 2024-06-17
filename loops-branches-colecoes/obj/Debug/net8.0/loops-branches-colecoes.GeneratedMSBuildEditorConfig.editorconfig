@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = loops_branches_colecoes
-build_property.ProjectDir = C:\Faculdade\csharp_basic_syntax\loops-branches-colecoes\
+build_property.ProjectDir = C:\Faculdade\csharp_fundamentals\loops-branches-colecoes\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,24 +1,19 @@
-using System.Net.Mime;
-using System.Runtime.InteropServices;
-
 namespace Entities;
 
-class Word
+class WordGuessGame
 {
-    public string Content { private get; set; }
+    private Word _word;
     public List<ColoredLetter> ColoredAnagram { get; private set; }
-    public string[] Tips { get; set; } = new string[3];
 
-    public Word(string content, string[] tip)
+    public WordGuessGame(Word word)
     {
-        Tips = tip;
-        Content = content;
+        _word = word;
         ColoredAnagram = new List<ColoredLetter>();
     }
 
     public void BuildAnagram()
     {
-        char[] chars = Content.ToCharArray();
+        char[] chars = _word.Content.ToCharArray();
 
         Random random = new Random();
 
@@ -33,7 +28,7 @@ class Word
 
         for (int i = 0; i < chars.Length; i++)
         {
-            if (Content[i] == chars[i])
+            if (_word.Content[i] == chars[i])
             {
                 ColoredAnagram.Add(new(chars[i], ConsoleColor.Green));
             }
@@ -65,4 +60,17 @@ class ColoredLetter
         Letter = letter;
         Color = color;
     }
+}
+
+class Word
+{
+    public string Content { get; set; }
+    public string[] Tips { get; set; }
+
+    public Word(string content, string[] tips)
+    {
+        Content = content;
+        Tips = tips;
+    }
+
 }
